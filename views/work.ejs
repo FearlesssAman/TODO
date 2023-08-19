@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do divst</title>
+    <link rel="stylesheet" href="/Static/style.css">
+</head>
+<body>
+   
+    <header> 
+        <nav class="navbar">
+        
+            <ul class="nav-links">
+              <li><a href="/work">WORK</a></li>
+              <li><a href="/index">TODAY</a></li>
+              </ul>
+              </nav>
+       </header>
+<div class="container"><h1> weekdayday </h1></div> 
+   <div class="todo">
+        <div class="item"> <input type="checkbox"  ><p id="additem"> Meeting </p></div>
+        <div class="item"> <input type="checkbox"><p> salary </p></div>
+        <div class="item"> <input type="checkbox"><p> cold drink </p></div>
+         <% for(let i = 0  ; i < arr2.length ; i++){  %>
+            <div class="item"> <input type="checkbox"><p> <%= arr2[i] %></p></div>
+            <%    }   %>
+       
+        <form action="/work" method="post" class="cont"  >
+            <input    type="text" name="newitem2" placeholder="Add Items" autocomplete="off">
+            <button type="submit"  name="submit">+</button>
+        </form>
+    </div> 
+    <footer>CREATED BY AMAN PAL </footer>
+    
+</body>
+</html>
